@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Szczegóły posta {{ post.title }}{% endblock %}
+{% block content %}
+<h1>{{ post.title }}</h1>
+Post opublikowany {{ post.created }}, ostatnia modyfikacja
+{{ post.updated }}.
+<p>
+    {{ post.content }}
+</p>
+{% endblock %}
+

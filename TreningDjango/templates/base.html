@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+</head>
+<body>
+<ul>
+    <li><a href="{% url 'news:news_list' %}">News</a></li>
+    <li><a href="{% url 'main:hello' %}">Home</a></li>
+</ul>
+{% block content %}
+{% endblock %}
+</body>
+</html>
